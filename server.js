@@ -21,9 +21,10 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.js'))
 })
 
+// include and initialize the rollbar library with your access token
 let Rollbar = require('rollbar')
 let rollbar = new Rollbar({
-  accessToken: 'ae62287bcda642258b682a60e46b8a67',
+  accessToken: '1975946099804b60a06c855808fcd8f6',
   captureUncaught: true,
   captureUnhandledRejections: true,
 })
